@@ -1,0 +1,213 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(151, 231, 135);
+    margin-top: 10px;
+    font-size: 20px;
+    a:hover{
+        background-color: gray;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 1s;
+    }
+}
+.Logo{
+    padding: 2px;
+    margin-left: 10px;
+    
+}
+body{
+    background-color: rgb(218, 219, 219);
+}
+.abrir, .Cerrar{
+    display: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+   
+    display: flex;
+    li{
+
+        margin-top: 20px;
+        list-style-type: none;
+        padding: 1rem;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    
+}
+.carrusel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Titulo{
+    background-color: rgb(162, 241, 162);
+    text-align: center;
+    margin-top: 20px;
+    font-family: cursive;
+}
+.items{
+    
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contenido1{
+    background-color: rgb(146, 231, 146);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    .img-ra{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+}
+.contenido2{
+    
+    background-color: rgb(146, 231, 146);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    .img-cm{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+}
+.redes-Sociales{
+    margin-top: 20px;
+    background-color: rgb(177, 228, 177);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    a:hover{
+        border-radius: 10px;
+        padding: 10px;
+        transition: 1s;
+        text-decoration: underline;
+    }
+    li{
+        list-style-type: none;
+        padding: 1rem;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+}
+.vision{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
+    background-color: rgb(150, 253, 189);
+    border-radius: 20px;
+    p{
+        padding: 20px;
+        font-family: cursive;
+    }
+   
+}
+.mision{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px 20px 20px 20px;
+    justify-content: space-evenly;
+    background-color: rgb(150, 253, 189);
+    border-radius: 20px;
+    p{
+      padding: 20px;
+        font-family: cursive;
+    }
+}
+
+footer .info ul li svg {
+    height: 5vh;
+    width: auto;
+    padding: 5px;
+  
+}
+
+.contenido-mv{
+display: flex;
+justify-content: space-evenly;
+}
+@media(max-width:800px){
+    .contenido-mv{
+        display:flex;
+        flex-direction: column;
+        
+       
+    }
+    .contenido{
+        display: flex;
+        flex-direction: column;
+    }
+    .items{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .productos{
+        width: 100%; 
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        .flex-info-item p{
+        text-align: justify;
+        margin: 5%;
+        font-size: 150%;
+    } 
+    }
+    .redes-Sociales{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media(max-width: 465px){
+    .abrir, .Cerrar{
+        display: block;
+        height: 8vh;
+        width: 10vh;
+        border: 0;
+        background-color: rgb(151, 231, 135);
+    }
+    nav{
+        opacity: 0;
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+    }
+    /**Clases que se van agregar por medio de JAVASCRIPT**/
+    .nav-visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .ocultarBoton{
+        display: none;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
